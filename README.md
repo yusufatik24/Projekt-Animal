@@ -1,2 +1,2 @@
 # Projekt-Animal
-##Unser erstes Projekt auf Github
+#Unser erstes Projekt auf Github
