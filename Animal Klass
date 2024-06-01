@@ -1,0 +1,18 @@
+public class animalversuch {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	    private Long id;
+	    private String name;
+	    private String genus;
+	    private String description;
+	    private String gender;
+	    private double estimatedSize;
+	    private double estimatedWeight;
+	    private int estimatedAge;
+
+	    @ManyToOne
+	    private Location location;
+
+	    // Getter und Setter
+	}
+	
