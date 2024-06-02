@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anmeldung</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Anmeldung</title> //Tab Bezeichnung Anmeldeportal
+    <link rel="stylesheet" href="styles.css"> //Verknüpfung mit CSS
 </head>
 <body>
-    <img src="Logo.jpg.avif" alt="Logo" class="logo">
+    <img src="Logo.jpg.avif" alt="Logo" class="logo"> //Hintergrundbild hinzugefügt
     <div class="login-container">
-        <h1>Login</h1>
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password">
+        <h1>Login</h1> //Überschrift 
+        <label for="username">Username</label> //Textfeld 1
+        <input type="text" id="username" name="username"> //Textfeld 1 input
+        <label for="password">Password</label> //Textfeld 2
+        <input type="password" id="password" name="password"> //Textfeld 2 input
         <button type="submit" onclick="redirect()">log</button>
     </div>
 
     <script>
         function redirect() {
-            window.location.href = "second_page.html";
+            window.location.href = "second_page.html"; //Nach dem KLick auf "log" Button wird die nächste Seite geladen
         }
     </script>
 </body>
