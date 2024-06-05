@@ -1,0 +1,63 @@
+package org.example;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class CreateAnimal {
+    @Id
+    @GeneratedValue(
+        strategy = GenerationType.AUTO
+    )
+    private Long id;
+    private String gender;
+    private int weight;
+    private int size;
+    private int age;
+
+    @JsonIgnore
+    public CreateAnimal(String gender, int weight, int size, int age) {
+        this.gender = gender;
+        this.weight = weight;
+        this.size = size;
+        this.age = age;
+    }
+
+    public CreateAnimal() {
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getGender() {
+        return this.gender;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public int getWeight() {
+        return this.weight;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public int getSize() {
+        return this.size;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return this.age;
+    }
+}
